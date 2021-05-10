@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:id="@+id/layout"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="19"
+    android:id="@+id/listviewHoaDon">
+</ListView>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:paddingLeft="10dp"
+            android:text="PRINTING DETAILS"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CFD8DC"
+            android:paddingLeft="10dp"
+            android:text="Printer Status:"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/bpstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CFD8DC"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Disconnected"
+            android:textColor="#C73B3B"
+            android:textSize="24dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.10"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/Scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#ab000d"
+            android:drawableLeft="@drawable/ic_bluetooth_black_24dp"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="34dp"
+            android:paddingTop="3dp"
+            android:text="Connect"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mPrint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#ab000d"
+            android:drawableLeft="@drawable/ic_print_black_24dp"
+            android:enabled="false"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="34dp"
+            android:paddingTop="3dp"
+            android:text="Print"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonThanhToan"
+            android:text="Thanh toán"
+            android:textSize="30dp"
+            android:background="#8BC34A"/>
+    </LinearLayout>
+
+</LinearLayout>
